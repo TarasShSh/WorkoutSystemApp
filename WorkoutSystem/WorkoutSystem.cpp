@@ -76,6 +76,7 @@ string WorkoutSystem::ReturnTheBestSystem()
 			else if (forma == "Athlet")
 				return "Bro-split";
 		}
+		return "null";
 }
 
 void WorkoutSystem::RunBestSystem()

@@ -184,6 +184,11 @@
     <ClInclude Include="Vidjimannya.h" />
     <ClInclude Include="VidjimNaBrus.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTest1\UnitTest1.vcxproj">
+      <Project>{710178af-656c-4ee9-bba0-0534f640e8bb}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
