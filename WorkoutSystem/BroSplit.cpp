@@ -116,7 +116,12 @@ void BroSplit::ShowDoneExercisesPush(int counter)
 		cout << " Ви виконали такі вправи: ";
 		for (int i = 0; i < counter; i++) {
 			cout << vpravy[i] << "; ";
+			if ((i / 5) * 5 == i) // перенесення на новий рядок, якщо на екрані вже є 5 вправ
+			{
+				cout << endl;
+			}
 		}
+		AllDone(counter, "Push");
 	}
 }
 void BroSplit::ShowDoneExercisesLegs(int counter)
@@ -135,7 +140,12 @@ void BroSplit::ShowDoneExercisesLegs(int counter)
 		cout << " Ви виконали такі вправи: ";
 		for (int i = 0; i < counter; i++) {
 			cout << vpravy[i] << "; ";
+			if ((i / 5) * 5 == i) // перенесення на новий рядок, якщо на екрані вже є 5 вправ
+			{
+				cout << endl;
+			}
 		}
+		AllDone(counter, "Legs");
 	}
 }
 void BroSplit::AllDone(int counter, string training)

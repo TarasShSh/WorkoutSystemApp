@@ -140,7 +140,12 @@ void PushPullLegs::ShowDoneExercisesPush(int counter)
 		cout << " Ви виконали такі вправи: ";
 		for (int i = 0; i < counter; i++) {
 			cout << vpravy[i] << "; ";
+			if ((i / 5) * 5 == i) // перенесення на новий рядок, якщо на екрані вже є 5 вправ
+			{
+				cout << endl;
+			}
 		}
+		AllDone(counter, "Push");
 	}
 }
 void PushPullLegs::ShowDoneExercisesPull(int counter)
@@ -158,7 +163,12 @@ void PushPullLegs::ShowDoneExercisesPull(int counter)
 		cout << " Ви виконали такі вправи: ";
 		for (int i = 0; i < counter; i++) {
 			cout << vpravy[i] << "; ";
+			if ((i / 5) * 5 == i) // перенесення на новий рядок, якщо на екрані вже є 5 вправ
+			{
+				cout << endl;
+			}
 		}
+		AllDone(counter, "Pull");
 	}
 }
 void PushPullLegs::ShowDoneExercisesLegs(int counter)
@@ -176,7 +186,12 @@ void PushPullLegs::ShowDoneExercisesLegs(int counter)
 		cout << " Ви виконали такі вправи: ";
 		for (int i = 0; i < counter; i++) {
 			cout << vpravy[i] << "; ";
+			if ((i / 5) * 5 == i) // перенесення на новий рядок, якщо на екрані вже є 5 вправ
+			{
+				cout << endl;
+			}
 		}
+		AllDone(counter, "Legs");
 	}
 }
 void PushPullLegs::AllDone(int counter, string training)

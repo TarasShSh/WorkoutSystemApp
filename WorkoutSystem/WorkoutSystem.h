@@ -12,6 +12,7 @@ class WorkoutSystem
 public:	
 	string gender, meta, forma; // Дані, які буде вводити користувач
 	FullBody FB; PushPullLegs PPL; BroSplit BS; // створюємо об'єкти
+	void Start();
 	void EnterValues();
 	void RunBestSystem();
 	string ReturnTheBestSystem();

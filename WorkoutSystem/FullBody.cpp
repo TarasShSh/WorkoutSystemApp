@@ -97,7 +97,12 @@ void FullBody::ShowDoneExercises(int counter)
 		cout << " Ви виконали такі вправи: ";
 		for (int i = 0; i < counter; i++) {
 			cout << vpravy[i] << "; ";
+			if ((i / 5) * 5 == i) // перенесення на новий рядок, якщо на екрані вже є 5 вправ
+			{
+				cout << endl;
+			}
 		}
+		MainMenu();
 	}
 }
 void FullBody::AllDone(int counter)

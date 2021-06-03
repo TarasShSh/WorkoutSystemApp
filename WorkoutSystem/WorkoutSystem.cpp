@@ -1,6 +1,30 @@
 // WorkoutSystem.cpp
 #include "WorkoutSystem.h"
 
+void WorkoutSystem::Start()
+{
+	cout << " Вітаємо у програмі для підбору тренувань! " << endl << endl;
+
+	// Головне меню
+	int key;
+	cout << " [1] — Почати підбір системи тренування" << endl;
+	cout << " [0] — Вийти з програми" << endl;
+	do {
+		cout << " Введіть ваше значення: "; cin >> key;
+	} while (key != 0 && key != 1);
+	cout << endl << endl;
+
+	switch (key) {
+	case 0:
+		exit(0); // вихід з програми
+	case 1:
+		EnterValues(); // переходимо до функції введеня значень
+	}
+
+	cout << " Вам було підібрано систему \"" << ReturnTheBestSystem() << "\""
+		<< endl << endl; // Виводить користувачеві обрану йому систему
+	RunBestSystem();
+}
 void WorkoutSystem::EnterValues()
 {
 cout << " Введіть усі потрібні дані:" << endl << endl;
