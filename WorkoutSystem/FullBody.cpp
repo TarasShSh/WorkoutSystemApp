@@ -30,33 +30,43 @@ void FullBody::ShowSystemInfo() { // Отримуємо інформацію про систему
 }
 void FullBody::TrainingMenu() { // тренувальне меню
 	int counter = 0;
+	FB.skakalka.GetName();
 	FB.skakalka.DoExercise(); // 1
 	counter++;
 	BetweenMenu(counter);
+	FB.vidjim.GetName();
 	FB.vidjim.DoExercise(); // 2
 	counter++;
 	BetweenMenu(counter);
+	FB.oneArmGantUp.GetName();
 	FB.oneArmGantUp.DoExercise(); // 3
 	counter++;
 	BetweenMenu(counter);
+	FB.obertGantSpina.GetName();
 	FB.obertGantSpina.DoExercise(); // 4
 	counter++;
 	BetweenMenu(counter);
+	FB.lodochka.GetName();
 	FB.lodochka.DoExercise(); // 5
 	counter++;
 	BetweenMenu(counter);
+	FB.stanovaPull.GetName();
 	FB.stanovaPull.DoExercise(); // 6
 	counter++;
 	BetweenMenu(counter);
+	FB.hyperExt.GetName();
 	FB.hyperExt.DoExercise(); // 7
 	counter++;
 	BetweenMenu(counter);
+	FB.prysid.GetName();
 	FB.prysid.DoExercise(); // 8
 	counter++;
 	BetweenMenu(counter);
+	FB.pojejGidr.GetName();
 	FB.pojejGidr.DoExercise(); // 9
 	counter++;
 	BetweenMenu(counter);
+	FB.burpee.GetName();
 	FB.burpee.DoExercise(); // 10
 	counter++;
 	AllDone(counter); // Усі вправи зроблено

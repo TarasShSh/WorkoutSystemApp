@@ -44,4 +44,5 @@ public:
 	// Кардіо
 	SkakalkaJump skakalka;
 	Burpee burpee;
+
 };

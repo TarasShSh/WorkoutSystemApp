@@ -50,15 +50,19 @@ void BroSplit::PushTraining()
 {
 	int counter = 0;
 	string training = "Push";
+	BS.oneArmGantUp.GetName();
 	BS.oneArmGantUp.DoExercise(); // 1
 	counter++;
 	BetweenMenu(counter, training);
+	BS.vidjim.GetName();
 	BS.vidjim.DoExercise(); // 2
 	counter++;
 	BetweenMenu(counter, training);
+	BS.obertGantSpina.GetName();
 	BS.obertGantSpina.DoExercise(); // 3
 	counter++;
 	BetweenMenu(counter, training);
+	BS.vidjimNaBrus.GetName();
 	BS.vidjimNaBrus.DoExercise(); // 4
 	counter++;
 	AllDone(counter, training);
@@ -67,21 +71,27 @@ void BroSplit::LegsTraining()
 {
 	int counter = 0;
 	string training = "Legs";
+	BS.prysid.GetName();
 	BS.prysid.DoExercise(); // 1
 	counter++;
 	BetweenMenu(counter, training);
+	BS.bokVyp.GetName();
 	BS.bokVyp.DoExercise(); // 2
 	counter++;
 	BetweenMenu(counter, training);
+	BS.pojejGidr.GetName();
 	BS.pojejGidr.DoExercise(); // 3
 	counter++;
 	BetweenMenu(counter, training);
+	BS.stepUps.GetName();
 	BS.stepUps.DoExercise(); // 4
 	counter++;
 	BetweenMenu(counter, training);
+	BS.pidjomNohy.GetName();
 	BS.pidjomNohy.DoExercise(); // 5
 	counter++;
 	BetweenMenu(counter, training);
+	BS.burpee.GetName();
 	BS.burpee.DoExercise(); // 6
 	counter++;
 	AllDone(counter, training);

@@ -139,27 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BokoviVypady.cpp" />
     <ClCompile Include="BroSplit.cpp" />
-    <ClCompile Include="Burpee.cpp" />
-    <ClCompile Include="HyperExtensions.cpp" />
-    <ClCompile Include="Lodochka.cpp" />
     <ClCompile Include="FullBody.cpp" />
-    <ClCompile Include="ObertGantSpina.cpp" />
-    <ClCompile Include="OndorykiyPushGantelyaUp.cpp" />
-    <ClCompile Include="PidjomNohy.cpp" />
-    <ClCompile Include="PojejGidr.cpp" />
-    <ClCompile Include="PoyasPull.cpp" />
-    <ClCompile Include="Prysidannya.cpp" />
     <ClCompile Include="PushPullLegs.cpp" />
-    <ClCompile Include="Shrug.cpp" />
-    <ClCompile Include="SkakalkaJump.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="StanovaPull.cpp" />
-    <ClCompile Include="StepUps.cpp" />
+    <ClCompile Include="Vprava_Base.cpp" />
     <ClCompile Include="WorkoutSystem.cpp" />
-    <ClCompile Include="Vidjimannya.cpp" />
-    <ClCompile Include="VidjimNaBrus.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BokoviVypady.h" />
@@ -180,6 +165,7 @@
     <ClInclude Include="SkakalkaJump.h" />
     <ClInclude Include="StanovaPull.h" />
     <ClInclude Include="StepUps.h" />
+    <ClInclude Include="Vprava_base.h" />
     <ClInclude Include="WorkoutSystem.h" />
     <ClInclude Include="Vidjimannya.h" />
     <ClInclude Include="VidjimNaBrus.h" />

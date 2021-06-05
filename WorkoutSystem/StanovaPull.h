@@ -1,21 +1,29 @@
 // StanovaPull.h
-
+#include "Vprava_base.h"
 #pragma once
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-class StanovaPull // назва класу-вправи
+class StanovaPull : public Vprava_base
 {
-private:
-    string name; // назва вправи
 public:
-    void SetName(string value) { name = value; };
-    string GetName() { return name; };
+	StanovaPull(string name)
+	{
+		SetName(name);
+	}
 
-    void DoExercise(); // робимо вправу
+    void ShowInfo() override
+    {
+		cout << "---вправа дл€ зм≥цненн€ м'€з≥в попереку, що дозвол€Ї в прис≥данн€х краще прокачувати ноги---" << endl << endl;
 
-    void ShowInfo(); // ≤нформац≥€ про вправу
+		cout << "¬иконанн€: " << endl;
+		cout << "Х  поставте перед собою гантелю або штангу" << endl;
+		cout << "Х  ≥ п≥дн≥майте штангу р≥вном≥рно ≥ вертикально, не опускаючи вниз" << endl;
+		cout << "Х  плеч≥ повинн≥ бути в≥дведен≥ назад, а лопатки зведен≥" << endl << endl;
+
+		cout << "Х  ---повтор≥ть вправу 10 раз---" << endl;
+    }
 };
 

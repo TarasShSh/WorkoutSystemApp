@@ -12,6 +12,19 @@ class BroSplit
 private:
 	Exercise BS; // поле, яке містить усі вправи, BS - BroSplit
 public:
+
+
+	/*
+	void SetBS(Exercise value) { BS = value; };
+	Exercise GetBS() { return BS; };
+
+
+	BroSplit(Exercise BS)
+	{
+		SetBS(BS);
+	}
+	*/
+
 	void MainMenu(); // Головне меню
 
 	void TrainingMenu(); // Тренувальне меню (в даній системі одразу перехід до тренувань)

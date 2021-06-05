@@ -12,6 +12,18 @@ class PushPullLegs
 private:
 	Exercise PPL; // поле, яке містить усі вправи, PPL - PushPullLegs
 public:
+
+	/*
+	void SetPPL(Exercise value) { PPL = value; };
+	Exercise GetPPL() { return PPL; };
+
+
+	PushPullLegs(Exercise PPL)
+	{
+		SetPPL(PPL);
+	}
+	*/
+
 	void MainMenu(); // Головне меню
 
 	void TrainingMenu(); // Тренувальне меню

@@ -12,6 +12,16 @@ class FullBody // назва системи
 private:
 	Exercise FB; // поле, яке містить усі вправи, FB — FullBody
 public:
+	/*
+	void SetFB(Exercise value) { FB = value; };
+	Exercise GetFB() { return FB; };
+
+
+	FullBody(Exercise FB)
+	{
+		SetFB(FB);
+	}
+	*/
 	void MainMenu(); // Головне меню
 
 	void TrainingMenu(); // Тренувальне меню (в даній системі одразу перехід до тренувань)

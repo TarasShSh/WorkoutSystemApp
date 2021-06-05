@@ -57,15 +57,19 @@ void PushPullLegs::PushTraining()
 {
 	int counter = 0;
 	string training = "Push";
+	PPL.oneArmGantUp.GetName();
 	PPL.oneArmGantUp.DoExercise(); // 1
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.vidjim.GetName();
 	PPL.vidjim.DoExercise(); // 2
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.obertGantSpina.GetName();
 	PPL.obertGantSpina.DoExercise(); // 3
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.vidjimNaBrus.GetName();
 	PPL.vidjimNaBrus.DoExercise(); // 4
 	counter++;
 	AllDone(counter, training);
@@ -74,38 +78,49 @@ void PushPullLegs::PullTraining()
 {
 	int counter = 0;
 	string training = "Pull";
+	PPL.stanovaPull.GetName();
 	PPL.stanovaPull.DoExercise(); // 1
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.poyasPull.GetName();
 	PPL.poyasPull.DoExercise(); // 2
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.lodochka.GetName();
 	PPL.lodochka.DoExercise(); // 3
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.shrug.GetName();
 	PPL.shrug.DoExercise(); // 4
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.hyperExt.GetName();
 	PPL.hyperExt.DoExercise(); // 5
 	counter++;
 	AllDone(counter, training);
 }
+
 void PushPullLegs::LegsTraining()
 {
 	int counter = 0;
 	string training = "Legs";
+	PPL.prysid.GetName();
 	PPL.prysid.DoExercise(); // 1
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.bokVyp.GetName();
 	PPL.bokVyp.DoExercise(); // 2
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.pojejGidr.GetName();
 	PPL.pojejGidr.DoExercise(); // 3
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.stepUps.GetName();
 	PPL.stepUps.DoExercise(); // 4
 	counter++;
 	BetweenMenu(counter, training);
+	PPL.pidjomNohy.GetName();
 	PPL.pidjomNohy.DoExercise(); // 5
 	counter++;
 	AllDone(counter, training);
